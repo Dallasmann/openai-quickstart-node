@@ -27,7 +27,9 @@
   padding-top: 60px;
 }
 .main .icon {
-  width: 34px;
+  width: 150px;
+  margin-bottom: 24px;
+  position: center;
 }
 .main h3 {
   font-size: 32px;
@@ -38,16 +40,24 @@
 }
 .main form {
   display: flex;
-  flex-direction: column;
-  width: 320px;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
+  width: 500px;
 }
-.main input[type="text"] {
+.text_input,
+.text_output {
   padding: 12px 16px;
   border: 1px solid #10a37f;
   border-radius: 4px;
   margin-bottom: 24px;
+  margin-top: 24px;
   outline-color: #10a37f;
+  width: 100%;
+  vertical-align: top;
+  height: max-content;
 }
+
 .main ::placeholder {
   color: #8e8ea0;
   opacity: 1;
@@ -57,11 +67,36 @@
   color: #fff;
   background-color: #10a37f;
   border: none;
+  width: auto;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  flex-basis: 100%;
 }
-.main .result {
-  font-weight: bold;
-  margin-top: 40px;
+
+.my-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gauche {
+
+}
+.droite{
+  flex-basis: 100% ;
+  padding-left: 5%;
+}
+
+
+.deroulant {
+  background-color: #1abc9c; /* couleur de fond */
+  color: #fff; /* couleur du texte */
+  font-size: 16px; /* taille du texte */
+  padding: 10px; /* espacement intérieur */
+  border-radius: 5px; /* arrondi des bords */
+  border: none; /* suppression de la bordure */
+  box-shadow: none; /* suppression de l'ombre */
+  flex-basis: 100%;
+  margin-top: 24px;
 }
