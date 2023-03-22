@@ -63,6 +63,8 @@ export default function Home() {
 		          <option value="russe">Russe</option>
 		          <option value="chinois">Chinois</option>
 		          <option value="japonais">Japonais</option>
+			  <option value="Grecque">Japonais</option>
+			  
 	          </select>
             <form onSubmit={onSubmit}>
             <div class={`${styles['my-div']}`}>
